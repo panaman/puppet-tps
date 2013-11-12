@@ -9,6 +9,7 @@ define tps::report (
   $content = inline_template("<% @flare.each do |lines|%><%= lines %>\n<% end %>")
   file { $tpsfile: 
     ensure  => $ensure,
+    mode    => $mode,
     owner   => $owner,
     group   => $group,
     content => $content,
