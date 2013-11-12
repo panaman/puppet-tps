@@ -6,18 +6,18 @@ File defaults owner and group to '0' and the file permissions to '0644'
 
 *NOTE: flare can accept a single line or an array.
 
-EXAMPLE 
+####EXAMPLE 
 
-tps::report { '/etc/file.txt':
-  flare => [
-    'line one',
-    'line two',
-    'line three',
-    'line four',
-  ],
-}
+  tps::report { '/etc/file.txt':
+    flare => [
+      'line one',
+      'line two',
+      'line three',
+      'line four',
+    ],
+  }
 
-###OVERIDE OPTIONS:
-*owner => 'Lumbergh',
-*group => 'Chotchkies',
-*mode  => '0755',
+####OVERIDE OPTIONS
+  owner => 'Lumbergh',
+  group => 'Chotchkies',
+  mode  => '0755',
