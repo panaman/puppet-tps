@@ -1,6 +1,6 @@
 name 'panaman-tps'
 author 'Panaman'
-version '1.0.0'
+version '1.0.1'
 project_page 'http://www.thunderpoop.com'
 source 'https://github.com/panaman/puppet-tps'
 summary 'TPS Report Module'
