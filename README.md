@@ -17,7 +17,7 @@ tps::report { '/etc/file.txt':
   ],
 }
 
-##OVERIDE OPTIONS:
+###OVERIDE OPTIONS:
 *owner => 'Lumbergh',
 *group => 'Chotchkies',
 *mode  => '0755',
