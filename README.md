@@ -1,19 +1,3 @@
-# puppet-dnsmasq
-
-Manage dnsmasq via Puppet
-
-## How to use
-
-```
-    dnsmasq::conf { 'local-dns':
-        ensure => present,
-        source => 'puppet:///files/dnsmasq/local-dns',
-    }
-```
-
-
-
-
 TPS REPORT WRITER
 =================
 This is a simple puppet module that can create multi-line text files without a template.
