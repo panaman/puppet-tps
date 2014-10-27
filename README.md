@@ -17,21 +17,27 @@ File defaults owner and group to '0' and the file permissions to '0644'
     ],
   }
 ```
+  tps::report { '/etc/file2.txt':
+    flare => 'We need to talk about your TPS reports',
+  }
 
 ###Override options
 ```
-  owner => 'Lumbergh',
-  group => 'Chotchkies',
-  mode  => '0755',
+  owner     => 'Lumbergh',
+  group     => 'Chotchkies',
+  mode      => '0755',
+  show_diff => false,
+
 ```
 
 ###Example with override and variable
 
 ```
   tps::report { '/etc/file.txt':
-    owner => 'Lumbergh',
-    group => 'Chotchkies',
-    mode  => '0755',
+    owner     => 'Lumbergh',
+    group     => 'Chotchkies',
+    mode      => '0755',
+    show_diff => false,
     flare => [
       "PC load letter! $hostname",
       'We need to talk about your flair',

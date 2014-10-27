@@ -1,6 +1,6 @@
 {
   "name": "panaman-tps",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "panaman",
   "summary": "The TPS Report Module is a simple defined resource that can creates multiline files without a template",
   "license": "Apache 2.0",
