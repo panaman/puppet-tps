@@ -2,8 +2,6 @@
 #
 # This is a simple puppet module that can create multi-line text files without a template.
 #
-# This manifest is not needed for the hostint custom fact to work.
-# 
 # === Authors
 #
 # Panaman <panaman@geekempire.com>

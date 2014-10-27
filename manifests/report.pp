@@ -5,13 +5,16 @@ define tps::report (
   $group='0',
   $ensure='present',
   $flare,
+  $show_diff="true",
   ) {
-  $content = inline_template("<% @flare.each do |lines|%><%= lines %>\n<% end %>")
+  $flare_array = any2array($flare)
+  $content = inline_template("<% @flare_array.each do |lines|%><%= lines %>\n<% end %>")
   file { $tpsfile: 
-    ensure  => $ensure,
-    mode    => $mode,
-    owner   => $owner,
-    group   => $group,
-    content => $content,
+    ensure    => $ensure,
+    mode      => $mode,
+    owner     => $owner,
+    group     => $group,
+    show_diff => $show_diff,
+    content   => $content,
   }
 }
